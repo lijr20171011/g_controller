@@ -12,6 +12,8 @@ func Example() {
 	gqc := g_controller.NewGQC(4)
 	// defer gqc.Close()
 
+	fmt.Println(gqc.GetMaxGNum())
+
 	// 执行函数
 	f := func(p ...interface{}) interface{} {
 		fmt.Println(p...)

@@ -93,3 +93,8 @@ func PanicRecover() {
 		fmt.Println(err)
 	}
 }
+
+// 获取最大goroutine数
+func (gqc *GQC) GetMaxGNum() int {
+	return gqc.maxGNum
+}
